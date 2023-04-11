@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title> Operation {{operation_name}} Result </title>
+		<link rel="stylesheet" type="text/css" href= "{{url_for('static', filename = 'formstyle.css')}}" />
+	</head>
+	<body>
+		<div class="list">
+		<h1> Operation - {{operation_name}}.</h1>
+		<h1> Results: </h1>
+		<p>
+			<!-- df -->
+			{% if operation_result.shape[0] < 500 %}
+				<table class="df">
+					<tr>
+						<th style="background-color: Silver;">RowIndex</th> 
+						{% for i in operation_result %} <!-- header with column names -->
+							<th style="background-color: Silver;"> {{i}} </th>
+						{% endfor %}
+					</tr>
+
+					{% for j in range(operation_result.shape[0]) %} <!-- all row in df -->
+						<tr>
+							<td>{{j}}</td>
+							{% for i in operation_result %} 
+								<td> {{operation_result[i][j]}}</td>
+							{% endfor %}
+						</tr>
+					{% endfor %}
+					
+				</table> <!-- end df -->
+
+
+
+				{% else %}
+				<table class="df">
+					<tr>
+						<th style="background-color: Silver;">RowIndex</th> 
+						{% for i in operation_result %} <!-- header with column names -->
+							<th style="background-color: Silver;"> {{i}} </th>
+						{% endfor %}
+					</tr>
+
+					{% for j in range(500) %} <!-- first 500 row in df -->
+						<tr>
+							<td>{{j}}</td>
+							{% for i in operation_result %} 
+								<td> {{operation_result[i][j]}}</td>
+							{% endfor %}
+						</tr>
+					{% endfor %}
+					
+				</table> <!-- end df -->
+
+			{% endif %}
+		</p>
+	</body>
+</html>
