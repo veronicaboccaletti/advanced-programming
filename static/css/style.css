@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+project_document.body 
+
+.df {
+
+    padding: 50px 30px;
+    background: transparent;
+    border: 1px solid rgb(49, 38, 38) 0;
+    outline: none;
+    size-adjust:60%;
+
+
+}
+table {
+    width: 800px;
+    float:left
+
+}
+
+th {
+    padding: 10px;
+}
+td {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+tr {
+    font-size: small;
+    background: #000000;
+    background: linear-gradient(to right, #efc7ff 0%, #d3d3d3 100%);
+    padding: 20px;
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/static/images/dna9.png') ;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    overflow:scroll;
+
+}
+
+.doc{
+    width:65%;
+    margin-left: 6%;
+}
+a {
+    list-style-type:none;
+    padding: 0;
+    color: #5f5164;
+}
+.logo {
+    top: 60%;
+    width: 100px;
+    cursor: pointer;
+
+}
+
+#navbar {
+    top: 5%;
+    width: 85%;
+    height: 11%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.header {
+    color: rgb(49, 38, 38) 0;
+    position:absolute;
+    top: 25%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+}
+h1{
+    font-size: 80px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+}
+
+.button {
+    color: rgb(49, 38, 38) 0;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid rgb(49, 38, 38) 0;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    font-size: small;
+
+}
+
+h2{
+    font-size: 50px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+
+}
+
+h3{
+    font-size: 30px;
+    margin: 10px 0 20px;
+    line-height: 30px;
+
+}
+
+
+.content {
+    padding: 20px;
+    position:absolute;
+    top: 60%;
+    left: 6%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+#operations {
+    width: 500px;
+    float: left;
+    text-decoration: none;
+    color: rgb(0, 0, 0) ;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0 30px;
+    line-height: 30px;
+
+}
+
+#projectDoc {
+    width: 500px;
+    float: right;
+    text-decoration: none;
+    color: rgb(0, 0, 0) ;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0 30px;
+    line-height: 30px;
+
+}
+
+.description { clear: both;
+    background-color:transparent;
+    color:  rgb(0, 0, 0);
+    float:right;
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+    font-size: 20px;
+    margin: 30px 0 30px;
+    line-height: 30px;
+    width: 800px;
+    float: right;
+    text-decoration: none;
+    padding: 10px;
+    line-height: 30px;
+
+
+}
+
+.description1 { clear: both;
+    background-color:transparent;
+    color:  rgb(0, 0, 0);
+    float:right;
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+    font-size: 20px;
+    margin: 30px 0 30px;
+    line-height: 30px;
+    width: 900px;
+    float: right;
+    text-decoration: none;
+    padding: 10px;
+    line-height: 20px;
+
+
+}
+
+#footer{
+    clear: both;
+    padding: 10px;
+    background: #000000;
+    background: linear-gradient(to left, #000000 0%, #d3d3d3 100%);
+    text-align: left;
+    font-size: small;
+    color:linear-gradient(to left, #1a1919 0%, #d3d3d3 100%);
+    padding: 15px;
+    position:absolute;
+    top: 95%;
+    left: 0%;
+    right: 23%;
+    transform: translateY(-50%);
+    z-index: 2;
+    
+    
+    
+}
