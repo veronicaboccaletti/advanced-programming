@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'css/style.css')}}"/>
+		<title> Homepage </title>
+		<meta charset="utf-8">
+       <!-- <link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'style.css')}}">-->
+	</head>
+
+	<body>
+		<div class="hero">
+			
+			<div class="header"> 
+				<medium>Welcome to our</medium>
+				<h1> Homepage </h1>
+				<form action = "about" target = "_self">
+					<button class = 'button' type = 'submit' value = "about-ur-website"><b> About </b></button>
+				</form>
+			</div>
+		    <div id="navbar">
+			    <img src="/static/images/logo.png" class="logo">
+		    </div>
+			<div class="content"> 
+				<div id="operations">
+					<h2> Active operations </h2>
+					 <p> Click the button to see a list of the available operations. Then select an active operation to process the dataset, the result of the execution will be visible in a further view. </p>
+					<form action = "active_operations" target = "_self">
+						<button class = 'button' type = 'submit' value = "active_operations"><b> Go to operations </b></button>
+					</form>
+				</div> <!--doc-->
+
+				<div id="projectDoc"> <!-- LEFT 4 -->
+					<h2> Project document </h2>
+					<p> Click the button to read a more in depth description of the project. CRC cards and UML class diagrams describe the software analysis and the design, respectively. </p>
+					<form action = "project_document" target = "_self">
+						<button class = 'button' type = 'submit' value = "project-documentation"><b> More information </b></button>
+					</form>
+				</div> <!-- LEFT 4 -->
+			</div> <!--content-->
+			<div id = "footer">
+                Copyright &copy; 2022/2023 Advanced Programming project of Veronica Boccaletti, Viola Cimatti, Giulia Tavacca, Anna Ballestrazzi
+            </div>
+		</div>
+    </div>
+
+	</body>
+
+</html>
