@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 #function to extract data from filepath
 def get_df():
-	d = GFF3Dataset('Homo_sapiens.GRCh38.85.gff3.gz)
+	d = GFF3Dataset('Homo_sapiens.GRCh38.85.gff3.gz')
 	return d.dataframe
 # df1 = get_df() is a step to get async the data from Dataset. We can pass df1 to every operation with no need to retrive data every time.
 
